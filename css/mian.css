@@ -5,9 +5,65 @@
 :root{
     --font-weight-Title: 700;
     --font-family: "Lato", sans-serif;
-    --font-side-Title: 
+    --font-size-title: clamp(24px, 28px, 32px);
+    --font-size-subtitle: clamp(18px, 22px, 26px);
+    --font-size-paragraph: clamp(14px, 16px, 18px);
+    --font-size-link: clamp(14px, 16px, 18px);
+    --text-color-hover: #ff6347;
+
 }
 
 body{
-    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
 }
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center; 
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 80%;
+    width: 100%;
+}
+
+.header__navbar {
+    display: flex; /* Aplica flexbox al contenedor del navbar */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    background-color: aqua; /* Color de fondo del navbar */
+}
+
+.navbar__list {
+    list-style-type: none; /* Elimina los puntos de los elementos de lista */
+    display: flex; /* Aplica flexbox al contenedor de la lista */
+    flex-direction: row; /* Dispone los elementos en una fila */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    align-items: center;
+}
+
+.navbar__item {
+    margin-right: 20px; /* Espacio entre los elementos */
+}
+
+.navbar__item:hover {
+    font-size: calc(100% + 1px);
+    color: var(--text-color-hover);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+    
+
