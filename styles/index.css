@@ -16,6 +16,7 @@
 *{
     font-family: var(--font-family);
     color: var(--text-color);
+    scroll-behavior: smooth;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -43,7 +44,7 @@ button {
   appearance: none;
 }
 
-.header-title_colorPrimary{
+.colorPrimary{
     color: var(--primary-color);
 }
 
@@ -62,6 +63,7 @@ button {
 
 .header-container{
     border-bottom: 1px solid var(--border-color-secondry);
+    background-color: var(--background-color);
     position: sticky;
     width: 100vw;
     top: 0;
@@ -104,3 +106,17 @@ button {
     font-weight: 500;
     font-size: 16px;
 }
+
+
+/* Section Home Init*/
+
+.section-container {
+    background-color: var(--background-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center; /* Para centrar el texto internamente */
+}
+/* Section Home Fin*/
